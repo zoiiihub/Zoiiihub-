@@ -1,261 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="google-site-verification" content="J7qzkXI3Uf0X0reh-ISqcnzd-2KQaE-tzTM2jluT5hE" />
+<meta name="google-site-verification" content="J7qzkXI3Uf0X0reh-ISqcnzd-2KQaE-tzTM2jluT5hE" />
 <meta charset="UTF-8">
-  <title>ZoiiHub - Best Deals on Home, Fashion & Electronics</title>
-<meta name="description" content="Discover amazing deals on home products, fashion, mobile accessories and electronics at ZoiiHub. Shop smart and save more!">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ZOIII HUB | Smart Shopping</title>
+
+<title>ZOIII HUB | Smart Shopping & Best Deals</title>
+<meta name="description" content="Discover amazing deals on electronics, fashion, beauty and home products at ZoiiHub. Shop smart and save more!">
+
 <style>
-*{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;background:#f4f6fb;color:#172033}
-header{background:#111827;color:white;padding:22px 16px;text-align:center}
-header h1{margin:0;color:#64f5c4;font-size:30px}
-header p{margin:8px 0 0;color:#ddd}
-nav{background:#202b40;padding:13px;text-align:center}
-nav a{color:white;text-decoration:none;margin:0 10px;font-size:14px}
-.hero{padding:32px 18px;text-align:center;background:linear-gradient(135deg,#dffcf2,#e3eaff)}
-.hero h2{font-size:27px;margin:0 0 12px}
-.hero p{line-height:1.6}
-.search{width:90%;max-width:450px;padding:13px;border:1px solid #ccc;border-radius:9px;margin-top:10px;font-size:16px}
-h2.section{padding:0 16px;margin-top:28px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;background:#f4f7fc;color:#172033}
+
+header{background:#101c35;padding:18px 15px;text-align:center}
+.logo{font-size:32px;font-weight:900;color:#55d6ff;letter-spacing:2px}
+header p{color:#dce8f7;font-size:13px;margin-top:5px}
+
+nav{background:#182945;display:flex;justify-content:center;gap:22px;padding:14px 8px;overflow-x:auto;white-space:nowrap}
+nav a{color:white;text-decoration:none;font-size:13px;font-weight:bold}
+
+.hero{background:linear-gradient(135deg,#10213e,#075b87);color:white;padding:48px 18px;text-align:center}
+.hero h2{font-size:29px;margin-bottom:14px}
+.hero p{font-size:14px;line-height:1.7;color:#dcefff}
+.highlight{color:#55d6ff}
+.hero-btn{display:inline-block;margin-top:20px;background:#55d6ff;color:#10213e;padding:12px 25px;border-radius:25px;text-decoration:none;font-weight:bold;font-size:14px}
+
+.search-box{text-align:center;padding:22px 12px}
+.search{width:95%;max-width:480px;padding:15px;border:1px solid #dce3ef;border-radius:30px;font-size:15px;outline:none;background:white}
+
+.section-title{font-size:21px;margin:25px 15px 8px;color:#142440}
+.section-subtitle{font-size:13px;color:#758198;margin:0 15px 15px}
+
+.categories{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:15px}
+.category{background:white;padding:18px 5px;border-radius:14px;text-align:center;text-decoration:none;color:#172033;box-shadow:0 3px 14px #1424400d}
+.category .icon{font-size:29px;margin-bottom:8px}
+.category h3{font-size:12px}
+
 .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;padding:14px}
-.card{background:white;border-radius:13px;padding:16px 10px;text-align:center;box-shadow:0 3px 12px #0000000d}
-.icon{font-size:42px}
-.card h3{font-size:16px}
-.card p{font-size:13px;color:#596579;line-height:1.5}
-.btn{display:inline-block;background:#087f5b;color:white;padding:10px 12px;border-radius:7px;text-decoration:none;font-size:13px}
-.note{margin:16px;background:#fff7dc;padding:15px;border-radius:10px;font-size:13px;line-height:1.6}
-footer{background:#111827;color:#ddd;text-align:center;padding:24px 12px;font-size:13px;line-height:1.7}
+.card{background:white;border-radius:15px;padding:16px 10px;text-align:center;box-shadow:0 4px 15px #14244010;border:1px solid #edf0f6}
+.card .icon{font-size:43px;margin-bottom:8px}
+.card h3{font-size:15px;color:#172c4b;margin:7px 0}
+.card p{font-size:12px;color:#758198;line-height:1.5;min-height:34px}
+.price{font-size:17px;font-weight:bold;color:#087f5b;margin:12px 0}
+.btn{display:block;background:#087fbc;color:white;padding:11px 8px;border-radius:8px;text-decoration:none;font-size:13px;font-weight:bold}
+
+.deal-banner{margin:20px 15px;padding:23px 15px;border-radius:15px;background:linear-gradient(135deg,#dff7ff,#e5edff);text-align:center}
+.deal-banner h2{font-size:21px;color:#123254;margin-bottom:8px}
+.deal-banner p{font-size:13px;color:#53677e;line-height:1.6}
+
+.note{margin:16px;background:white;padding:16px;border-radius:12px;font-size:12px;line-height:1.8;color:#536177}
+
+footer{background:#101c35;color:#dce8f7;text-align:center;padding:30px 15px;font-size:13px;line-height:2}
+footer strong{font-size:21px;color:#55d6ff}
+
+@media(min-width:700px){
+.grid{grid-template-columns:repeat(4,minmax(0,1fr));padding:20px 30px;gap:18px}
+.categories{grid-template-columns:repeat(6,1fr);padding:20px 30px}
+.hero h2{font-size:38px}
+.section-title,.section-subtitle{margin-left:30px}
+}
 </style>
 </head>
+
 <body>
+
 <header>
-<h1>ZOIII HUB</h1>
+<div class="logo">ZOIII HUB</div>
 <p>Smart Choices. Better Living.</p>
 </header>
+
 <nav>
 <a href="#home">Home</a>
-<a href="#electronics">Electronics</a>
-<a href="#homeproducts">Home Products</a>
-<a href="#deals">Deals</a>
+<a href="#categories">Categories</a>
+<a href="#products">Products</a>
+<a href="#deals">Best Deals</a>
 </nav>
+
 <section class="hero" id="home">
-<h2>Find Your Next Favourite Product ✨</h2>
-<p>Discover useful gadgets, electronics and home essentials in one place.</p>
-<input class="search" id="search" placeholder="Search products..." oninput="filterProducts()">
+<h2>Discover Your <span class="highlight">Perfect Choice</span> ✨</h2>
+<p>Explore trending electronics, fashion, beauty and home essentials.<br>Find useful products at amazing prices.</p>
+<a href="#products" class="hero-btn">Explore Products →</a>
 </section>
-<h2 class="section" id="electronics">📱 Mobiles & Electronics</h2>
+
+<div class="search-box">
+<input class="search" id="search" placeholder="🔍 Search your favourite products..." oninput="filterProducts()">
+</div>
+
+<h2 class="section-title" id="categories">Explore Categories</h2>
+<p class="section-subtitle">Find everything you need in one place.</p>
+
+<div class="categories">
+<a href="#products" class="category"><div class="icon">📱</div><h3>Electronics</h3></a>
+<a href="#products" class="category"><div class="icon">👕</div><h3>Fashion</h3></a>
+<a href="#products" class="category"><div class="icon">🏠</div><h3>Home</h3></a>
+<a href="#products" class="category"><div class="icon">💄</div><h3>Beauty</h3></a>
+<a href="#products" class="category"><div class="icon">🍳</div><h3>Kitchen</h3></a>
+<a href="#products" class="category"><div class="icon">⌚</div><h3>Accessories</h3></a>
+</div>
+
+<div class="deal-banner">
+<h2>🛍️ Smart Shopping Starts Here!</h2>
+<p>Discover handpicked products for your everyday needs.</p>
+</div>
+
+<h2 class="section-title" id="products">🔥 Popular Products</h2>
+<p class="section-subtitle">Explore our selected products and deals.</p>
+
 <div class="grid">
-<div class="card" data-name="earbuds bluetooth headphones">
+
+<div class="card" data-name="wireless earbuds bluetooth headphones">
 <div class="icon">🎧</div><h3>Wireless Earbuds</h3>
-<p>Explore wireless audio options for everyday use.</p>
-<a class="btn" href="#products">Explore Products</a>
+<p>Everyday wireless audio</p><div class="price">₹999</div>
+<a class="btn" href="https://amzn.in/d/0bWj39aI" target="_blank" rel="noopener noreferrer">View Deal →</a>
 </div>
-<div class="card" data-name="smartwatch watch fitness">
-<div class="icon">⌚</div><h3>Smart Watches</h3>
-<p>Discover watches and fitness accessories.</p>
-<a class="btn" href="#products">Explore Products</a>
+
+<div class="card" data-name="smart watch fitness">
+<div class="icon">⌚</div><h3>Smart Watch</h3>
+<p>Smart everyday accessory</p><div class="price">₹1,499</div>
+<a class="btn" href="https://link.amazon/B0640HILc" target="_blank" rel="noopener noreferrer">View Deal →</a>
 </div>
-<div class="card" data-name="mobile phone smartphone">
-<div class="icon">📱</div><h3>Mobile Phones</h3>
-<p>Compare features before choosing your phone.</p>
-<a class="btn" href="#products">Explore Products</a>
+
+<div class="card" data-name="iphone case mobile cover">
+<div class="icon">📱</div><h3>iPhone Case</h3>
+<p>Stylish and protective phone cases</p><div class="price">₹299</div>
+<a class="btn" href="https://link.amazon/B0iwpCfk0" target="_blank" rel="noopener noreferrer">View Deal →</a>
 </div>
-<div class="card" data-name="charger cable powerbank">
-<div class="icon">🔌</div><h3>Chargers & Power Banks</h3>
-<p>Find handy charging accessories.</p>
-<a class="btn" href="#products">Explore Products</a>
+
+<div class="card" data-name="bluetooth speaker music">
+<div class="icon">🔊</div><h3>Bluetooth Speaker</h3>
+<p>Portable wireless speaker</p><div class="price">₹999</div>
+<a class="btn" href="https://link.amazon/B0fyamVfI" target="_blank" rel="noopener noreferrer">View Deal →</a>
 </div>
+
+<div class="card" data-name="bedsheet bedroom home">
+<div class="icon">🛏️</div><h3>Bedsheet</h3>
+<p>Beautiful and comfortable bedsheets</p><div class="price">₹499</div>
+<a class="btn" href="https://link.amazon/B0hoh5bTQ" target="_blank" rel="noopener noreferrer">View Deal →</a>
 </div>
-<h2 class="section" id="homeproducts">🏠 Home Products</h2>
-<div class="grid">
-<div class="card" data-name="kitchen appliances mixer">
-<div class="icon">🍳</div><h3>Kitchen Essentials</h3>
-<p>Useful items for your kitchen and daily routine.</p>
-<a class="btn" href="#products">Explore Products</a>
+
+<div class="card" data-name="sunscreen beauty skin">
+<div class="icon">☀️</div><h3>Sunscreen</h3>
+<p>Daily sun protection for your skin</p><div class="price">₹399</div>
+<a class="btn" href="https://link.amazon/B0aKzBCQ1" target="_blank" rel="noopener noreferrer">View Deal →</a>
 </div>
-<div class="card" data-name="cleaning home tools">
-<div class="icon">🧹</div><h3>Home Cleaning</h3>
-<p>Discover practical cleaning tools.</p>
-<a class="btn" href="#products">Explore Products</a>
+
+<div class="card" data-name="moisturizer skincare">
+<div class="icon">💧</div><h3>Moisturizer</h3>
+<p>Daily skin hydration and care</p><div class="price">₹299</div>
+<a class="btn" href="https://link.amazon/B0fOndf8M" target="_blank" rel="noopener noreferrer">View Deal →</a>
 </div>
-<div class="card" data-name="lamp lighting home">
-<div class="icon">💡</div><h3>Lighting</h3>
-<p>Explore lights and everyday home accessories.</p>
-<a class="btn" href="#products">Explore Products</a>
+
+<div class="card" data-name="face wash cleanser beauty">
+<div class="icon">🫧</div><h3>Face Wash</h3>
+<p>Daily face cleansing and care</p><div class="price">₹199</div>
+<a class="btn" href="https://link.amazon/B0bHyUNIq" target="_blank" rel="noopener noreferrer">View Deal →</a>
 </div>
-<div class="card" data-name="storage organiser home">
-<div class="icon">📦</div><h3>Storage & Organisers</h3>
-<p>Ideas to keep your home organised.</p>
-<a class="btn" href="#products">Explore Products</a>
+
+<div class="card" data-name="perfume fragrance">
+<div class="icon">🌸</div><h3>Perfume</h3>
+<p>Fresh fragrance for everyday use</p><div class="price">₹499</div>
+<a class="btn" href="https://link.amazon/B0gH4dCQU" target="_blank" rel="noopener noreferrer">View Deal →</a>
 </div>
+
+<div class="card" data-name="fast charger charging cable">
+<div class="icon">🔌</div><h3>Fast Charger</h3>
+<p>Charging accessory</p><div class="price">₹499</div>
+<a class="btn" href="https://link.amazon/B00vdDQbG" target="_blank" rel="noopener noreferrer">View Deal →</a>
 </div>
-<h2 class="section" id="deals">🔥 Deals & Recommendations</h2>
-<div class="note">
-<strong>Our shopping tip:</strong> Compare product features, customer reviews and the latest price before buying. Prices and offers can change.
+
+<div class="card" data-name="led light lighting">
+<div class="icon">💡</div><h3>LED Light</h3>
+<p>Useful home lighting</p><div class="price">₹299</div>
+<a class="btn" href="https://link.amazon/B09tfdwXg" target="_blank" rel="noopener noreferrer">View Deal →</a>
 </div>
+
+<div class="card" data-name="kitchen products cooking">
+<div class="icon">🍳</div><h3>Kitchen Products</h3>
+<p>Useful kitchen tools for everyday cooking</p><div class="price">₹399</div>
+<a class="btn" href="https://link.amazon/B010lvr5U" target="_blank" rel="noopener noreferrer">View Deal →</a>
+</div>
+
+<div class="card" data-name="dress tshirts clothes fashion">
+<div class="icon">👕</div><h3>Dress & T-Shirts</h3>
+<p>Stylish everyday clothing</p><div class="price">₹499</div>
+<a class="btn" href="https://link.amazon/B02p8diau" target="_blank" rel="noopener noreferrer">View Deal →</a>
+</div>
+
+<div class="card" data-name="power bank battery">
+<div class="icon">🔋</div><h3>Power Bank</h3>
+<p>Portable charging for your devices</p><div class="price">₹999</div>
+<a class="btn" href="https://link.amazon/B05uu9wo3" target="_blank" rel="noopener noreferrer">View Deal →</a>
+</div>
+
+<div class="card" data-name="bags backpacks travel">
+<div class="icon">🎒</div><h3>Bags & Backpacks</h3>
+<p>Stylish bags for travel and everyday use</p><div class="price">₹799</div>
+<a class="btn" href="https://link.amazon/B0fWPjbe2" target="_blank" rel="noopener noreferrer">View Deal →</a>
+</div>
+
+<div class="card" data-name="kids toys children">
+<div class="icon">🧸</div><h3>Kids Toys</h3>
+<p>Fun and exciting toys for kids</p><div class="price">Explore Toys</div>
+<a class="btn" href="https://link.amazon/B0bahuRR9" target="_blank" rel="noopener noreferrer">View Deal →</a>
+</div>
+
+<div class="card" data-name="girls crop tops fashion">
+<div class="icon">👚</div><h3>Girls Crop Tops</h3>
+<p>Trendy and stylish crop tops</p><div class="price">Shop Now</div>
+<a class="btn" href="https://link.amazon/B0cmaMb2W" target="_blank" rel="noopener noreferrer">View Deal →</a>
+</div>
+
+<div class="card" data-name="shoes footwear">
+<div class="icon">👟</div><h3>Shoes</h3>
+<p>Stylish and comfortable shoes for everyone</p><div class="price">Shop Now</div>
+<a class="btn" href="https://link.amazon/B0en86ZHD" target="_blank" rel="noopener noreferrer">View Deal →</a>
+</div>
+
+<div class="card" data-name="massage gun body muscle massager">
+<div class="icon">💆</div><h3>Massage Gun</h3>
+<p>Relaxing body massage and muscle relief</p><div class="price">₹999</div>
+<a class="btn" href="https://link.amazon/B0ehEMAEJ" target="_blank" rel="noopener noreferrer">View Deal →</a>
+</div>
+
+<div class="card" data-name="laptop stand computer">
+<div class="icon">💻</div><h3>Laptop Stand</h3>
+<p>Adjustable laptop stand for better comfort</p><div class="price">₹299</div>
+<a class="btn" href="https://link.amazon/B08CrM46A" target="_blank" rel="noopener noreferrer">View Deal →</a>
+</div>
+
+</div>
+
+<div class="note" id="deals">
+<strong>💡 Smart Shopping Tip</strong><br>
+Compare product features, customer reviews and the latest price before buying. Prices and offers may change.
+</div>
+
 <div class="note" id="disclosure">
-<strong>Affiliate Disclosure:</strong> ZOIII HUB may earn a commission from qualifying purchases through affiliate links, at no extra cost to you. Product links will be added after affiliate registration.
+<strong>Affiliate Disclosure</strong><br>
+As an Amazon Associate, ZOIII HUB may earn from qualifying purchases. This comes at no extra cost to you.
 </div>
+
 <footer>
 <strong>ZOIII HUB</strong><br>
 Smart Choices. Better Living.<br>
-Independent product discovery website.
+Discover • Compare • Shop Smart<br>
+© 2026 ZOIII HUB. All rights reserved.
 </footer>
+
 <script>
 function filterProducts(){
 let q=document.getElementById('search').value.toLowerCase();
 document.querySelectorAll('.card').forEach(card=>{
-card.style.display=card.dataset.name.includes(q)||card.innerText.toLowerCase().includes(q)?'block':'none';
+let name=card.dataset.name || "";
+let text=card.innerText.toLowerCase();
+card.style.display=name.includes(q) || text.includes(q) ? "block" : "none";
 });
 }
 </script>
-  <div id="products" style="padding:24px 16px;">
-  <h2 class="section">🛍️ Popular Products</h2>
-  <div class="grid">
-    <div class="card">
-      <div class="icon">🎧</div>
-      <h3>Wireless Earbuds</h3>
-      <p>Everyday wireless audio</p>
-      <h3>₹999</h3>
-      <a class="btn" href="https://amzn.in/d/0bWj39aI">View Deal</a>
-    </div>
-    <div class="card">
-      <div class="icon">⌚</div>
-      <h3>Smart Watch</h3>
-      <p>Smart everyday accessory</p>
-      <h3>₹1,499</h3>
-      <a class="btn" href="https://link.amazon/B0640HILc">View Deal</a>
-    </div>
-    <div class="card">
-  <div class="icon">📱</div>
-  <h3>iPhone Case</h3>
-  <p>Stylish and protective phone cases</p>
-  <h3>₹299</h3>
-  <a class="btn" href="https://link.amazon/B0iwpCfk0" target="_blank" rel="noopener noreferrer">View Deal</a>
-</div>
-    <div class="card">
-  <div class="icon">🔊</div>
-  <h3>Bluetooth Speaker</h3>
-  <p>Portable wireless speaker</p>
-  <h3>₹999</h3>
-  <a class="btn" href="https://link.amazon/B0fyamVfI" target="_blank" rel="noopener noreferrer">View Deal</a>
-</div>
-    <div class="card">
-  <div class="icon">🛏️</div>
-  <h3>Bedsheet</h3>
-  <p>Beautiful and comfortable bedsheets</p>
-  <h3>₹499</h3>
-  <a class="btn" href="https://link.amazon/B0hoh5bTQ" target="_blank" rel="noopener noreferrer">View Deal</a>
-</div>
-    <div class="card">
-  <div class="icon">☀️</div>
-  <h3>Sunscreen</h3>
-  <p>Daily sun protection for your skin</p>
-  <h3>₹399</h3>
-  <a class="btn" href="https://link.amazon/B0aKzBCQ1" target="_blank" rel="noopener noreferrer">View Deal</a>
-</div>
-    <div class="card">
-  <div class="icon">💧</div>
-  <h3>Moisturizer</h3>
-  <p>Daily skin hydration and care</p>
-  <h3>₹299</h3>
-  <a class="btn" href="https://link.amazon/B0fOndf8M" target="_blank" rel="noopener noreferrer">View Deal</a>
-</div>
-    <div class="card">
-  <div class="icon">🫧</div>
-  <h3>Face Wash</h3>
-  <p>Daily face cleansing and care</p>
-  <h3>₹199</h3>
-  <a class="btn" href="https://link.amazon/B0bHyUNIq" target="_blank" rel="noopener noreferrer">View Deal</a>
-</div>
-    <div class="card">
-  <div class="icon">🌸</div>
-  <h3>Perfume</h3>
-  <p>Fresh fragrance for everyday use</p>
-  <h3>₹499</h3>
-  <a class="btn" href="https://link.amazon/B0gH4dCQU" target="_blank" rel="noopener noreferrer">View Deal</a>
-</div>
-    <div class="card">
-      <div class="icon">🔌</div>
-      <h3>Fast Charger</h3>
-      <p>Charging accessory</p>
-      <h3>₹499</h3>
-      <a class="btn" href="https://link.amazon/B00vdDQbG">View Deal</a>
-    </div>
-    <div class="card">
-      <div class="icon">💡</div>
-      <h3>LED Light</h3>
-      <p>Useful home lighting</p>
-      <h3>₹299</h3>
-      <a class="btn" href="https://link.amazon/B09tfdwXg" target="_blank" rel="noopener noreferrer">View Deal</a>
-    </div>
-    <div class="card">
-  <div class="icon">🍳</div>
-  <h3>Kitchen Products</h3>
-  <p>Useful kitchen tools for everyday cooking</p>
-  <h3>₹399</h3>
-  <a class="btn" href="https://link.amazon/B010lvr5U" target="_blank" rel="noopener noreferrer">View Deal</a>
-</div>
-    <div class="card">
-  <div class="icon">👕</div>
-  <h3>Dress & T-Shirts</h3>
-  <p>Stylish everyday clothing</p>
-  <h3>₹499</h3>
-  <a class="btn" href="https://link.amazon/B02p8diau" target="_blank" rel="noopener noreferrer">View Deal</a>
-</div>
-    <div class="card">
-  <div class="icon">🔋</div>
-  <h3>Power Bank</h3>
-  <p>Portable charging for your devices</p>
-  <h3>₹999</h3>
-  <a class="btn" href="https://link.amazon/B05uu9wo3" target="_blank" rel="noopener noreferrer">View Deal</a>
-</div>
-    <div class="card">
-  <div class="icon">🎒</div>
-  <h3>Bags & Backpacks</h3>
-  <p>Stylish bags for travel and everyday use</p>
-  <h3>₹799</h3>
-  <a class="btn" href="https://link.amazon/B0fWPjbe2" target="_blank" rel="noopener noreferrer">View Deal</a>
-</div>
-    <div class="card">
-  <div class="icon">🧸</div>
-  <h3>Kids Toys</h3>
-  <p>Fun and exciting toys for kids</p>
-  <h3>Explore Toys</h3>
-  <a class="btn" href="https://link.amazon/B0bahuRR9" target="_blank" rel="noopener noreferrer">View Deal</a>
-</div>
-    <div class="card">
-  <div class="icon">👚</div>
-  <h3>Girls Crop Tops</h3>
-  <p>Trendy and stylish crop tops</p>
-  <h3>Shop Now</h3>
-  <a class="btn" href="https://link.amazon/B0cmaMb2W" target="_blank" rel="noopener noreferrer">View Deal</a>
-</div>
-    <div class="card">
-  <div class="icon">👟</div>
-  <h3>Shoes</h3>
-  <p>Stylish and comfortable shoes for everyone</p>
-  <h3>Shop Now</h3>
-  <a class="btn" href="https://link.amazon/B0en86ZHD" target="_blank" rel="noopener noreferrer">View Deal</a>
-</div>
-    <div class="card">
-  <div class="icon">💆</div>
-  <h3>Massage Gun</h3>
-  <p>Relaxing body massage and muscle relief</p>
-  <h3>₹999</h3>
-  <a class="btn" href="https://link.amazon/B0ehEMAEJ" target="_blank" rel="noopener noreferrer">View Deal</a>
-</div>
-  <div class="card">
-  <div class="icon">💻</div>
-  <h3>Laptop Stand</h3>
-  <p>Adjustable laptop stand for better comfort</p>
-  <h3>₹299</h3>
-  <a class="btn" href="https://link.amazon/B08CrM46A" target="_blank" rel="noopener noreferrer">View Deal</a>
-</div>
-  </div>
-</div>
+
 </body>
 </html>
